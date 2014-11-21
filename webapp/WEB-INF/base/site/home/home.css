@@ -1,0 +1,151 @@
+
+.topvideo
+{
+	top:0px;
+}
+.topvideo
+{
+	top:0px;
+}
+
+p
+{
+	color: black;
+}
+
+div.topvideoarea
+{
+	height: 1596px;
+}
+
+div.toprow {
+	width: 1000px;
+	height:600px;
+	margin:auto;
+}
+
+div.backcontent
+{
+	text-align: center;
+	position:absolute;	
+	z-index:-1;
+	height: 1596px;
+	background-color: black;
+	width: 100%;	
+	top: 50px;
+}
+div.contactformbackground
+{
+	text-align: center;
+	position:absolute;	
+	z-index:-1;
+	height: 400px;
+	width: 100%;	
+	overflow: hidden;
+}
+
+div.contactformcontainer
+{
+	width: 1000px;
+	margin: auto;
+	padding-top: 30px;
+}
+
+div.contactformcontainer div.row
+{
+	width: 1000px;
+}
+
+div.contactfield
+{
+	margin-left: -15px;
+	padding-right: 0px;
+}
+
+div.row input
+{
+	background-color: rgba(123, 123, 123, 0.4);
+	padding-left: 10px;
+	width: 300px;
+	height: 60px;
+	text-align: left;
+}
+
+div.content
+{
+	background-color: transparent;
+	color: white;
+	font-size: 1.5em;
+	width: 500px;
+	padding: 200px 0 0px 0;
+	text-align: center;
+	margin: 0 auto;
+	height: 350px;
+}
+
+div.onelogo
+{
+	padding-top: 4px;
+}
+
+.diagonaluphill {
+    z-index: 1;
+    padding: 3em;
+}
+.diagonaluphill:before {
+    -webkit-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+    -webkit-transform-origin: 3% 0;
+    transform-origin: 3% 0;
+    top: 0;
+    left: -25%;
+    z-index: -1;
+    width: 150%;
+    height: 75%;
+    background: inherit;
+}
+.diagonaldownhill {
+    z-index: 1;
+    padding: 3em;
+}
+.diagonaldownhill:before {
+    -webkit-transform: rotate(3deg);
+    transform: rotate(3deg);
+    -webkit-transform-origin: 3% 0;
+    transform-origin: 3% 0;
+    top: -100px;
+    left: 0;
+    z-index: -1;
+    width: 150%;
+    height: 75%;
+    background: inherit;
+}
+
+
+section {
+    position: relative;
+    background: #f1f2f2;
+    color: #fff;
+    text-align: center;
+}
+section:before {
+    position: absolute;
+    content:'';
+}
+section.diagonaluphill {
+    background: #f1f2f2;
+}
+
+#fourth {
+    position: relative;
+    background: black;
+    color: #fff;
+    text-align: center;
+}
+#fourth:before {
+    position: absolute;
+    content:'';
+}
+#fourth.diagonaldownhill {
+    background: #fff;
+}

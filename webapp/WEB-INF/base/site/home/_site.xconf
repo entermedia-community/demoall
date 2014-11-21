@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<page>
+  	
+	<script id="jquery" src="/${applicationid}/components/javascript/jquery-1.7.1.min.js"/>
+	<script id="bootstrap" src="/${applicationid}/components/bootstrap/js/bootstrap.js" />
+	<script id="jangular" src="/${applicationid}/components/javascript/jAngular/js/jAngular.js"></script>
+
+	<style id="bootstrap" href='/${applicationid}/components/bootstrap/css/bootstrap.min.css' />
+	<style id="jqueryui" href="${themeprefix}/styles/jquery-ui.css"/>  
+
+	<layout>./layout.html</layout>
+  
+</page>
