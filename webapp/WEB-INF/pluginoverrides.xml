@@ -7,7 +7,7 @@
 			<value>demo@entermediasoftware.com</value>
 		</property>
 		<property name="smtpPassword">
-			<value>48fd231c-ee8b-43fc-b9f5-7f80ce32717c</value>
+			<value>48fd231c-xxx-xxx-xxx</value>
 		</property>
 		<property name="smtpSecured">
 			<value>true</value>
