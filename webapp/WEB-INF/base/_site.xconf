@@ -18,6 +18,9 @@
   	<!-- Allows uses to create their own accounts in the guest group -->
 	<property name="allowguestregistration">false</property>
 
+  	<!-- Logs in a user with a cookie -->
+	<path-action name="Admin.autoLogin"/>  
+
 	<!-- Defines what languages can be selected for this site -->
 	<property name="auto_translate">true</property>
 	<property name="auto_translate_en">false</property>
@@ -61,8 +64,6 @@
 		</or>	
   	</permission>
 
-  	<!-- Logs in a user with a cookie -->
-	<path-action name="Admin.autoLogin"/>  
 	<!-- Enables editing and checks for missing pages -->
 	<page-action name="Admin.allowEditing"/>
 
