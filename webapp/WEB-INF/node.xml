@@ -10,8 +10,8 @@
      <property name="index.store.fs.mmapfs.enabled">true</property>
      <property name="index.merge.policy.merge_factor">20</property>
       -->
-     <property id="path.data">./elastic/data</property>
-     <property id="path.logs">./elastic/logs</property>
-     <property id="path.work">./elastic/work</property>
+     <property id="path.data">${webroot}/WEB-INF/elastic/${nodeid}/data</property>
+     <property id="path.logs">${webroot}/WEB-INF/elastic/${nodeid}/logs</property>
+     <property id="path.work">${webroot}/WEB-INF/elastic/${nodeid}/work</property>
 
 </node>
