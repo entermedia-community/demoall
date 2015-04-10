@@ -70,6 +70,7 @@
 			<include name="WEB-INF/*.*" />
 			<include name="media/**" />
 			<include name="openinstitute/**" />
+			<include name="qa/**" />
 			<include name="emshare/**" />
 			<include name="theme/**" />
    			<include name="entermedia/_site.xconf" />
