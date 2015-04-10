@@ -71,6 +71,7 @@
 			<include name="media/**" />
 			<include name="qa/**" />
 			<include name="openinstitute/**" />
+			<include name="qa/**" />
 			<include name="emshare/**" />
 			<include name="theme/**" />
    			<include name="entermedia/_site.xconf" />
