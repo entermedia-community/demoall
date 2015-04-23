@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/entermedia-core"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/entermedia-server"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/extension-openedit"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/tomcat8"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/extension-elasticsearch"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
