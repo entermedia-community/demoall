@@ -135,7 +135,7 @@
                prefix="localhost_access_log" suffix=".txt"
                pattern="%h %l %u %t &quot;%r&quot; %s %b" />
 
-		<Context path="/" docBase="/home/shanti/git/demoall/webapp"  reloadable="true"  >
+		<Context path="/" docBase="${catalina.home}/webapp"  reloadable="true"  >
 		</Context>
 
       </Host>
