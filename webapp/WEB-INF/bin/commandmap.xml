@@ -18,17 +18,19 @@
 		<asperaupload>./aspera/upload.sh</asperaupload>
 		<setupclient>./setupclient.sh</setupclient>
 	</commandmap>
-	<commandmap os="WINDOWS">
-		<commandbase>../../tools</commandbase>
-		<lame>.\lame\lame.exe</lame>
-		<ffmpeg>.\ffmpeg\ffmpeg.exe</ffmpeg>
-		<ffprobe>.\ffmpeg\ffprobe.exe</ffprobe>
-		<convert>.\im\convert.exe</convert>
-		<composite>.\im\composite.exe</composite>
-		<ghostscript>.\gs\bin\gswin64c.exe</ghostscript>
-		<exiftool>.\exiftool\exiftool.exe</exiftool>
-		<exiftoolthumb>.\exiftool\exiftoolthumb.bat</exiftoolthumb>
-		<qt-faststart>.\ffmpeg\qt-faststart.exe</qt-faststart>
-		<unlock>.\unlocker\unlocker.exe</unlock>
-	</commandmap>
+    <commandmap os="WINDOWS">
+        <commandbase>..\tools</commandbase>
+        <lame>.\lame\lame.exe</lame>
+        <ffmpeg>.\ffmpeg\ffmpeg.exe</ffmpeg>
+        <ffprobe>.\ffmpeg\ffprobe.exe</ffprobe>
+        <convert>.\im\convert.exe</convert>
+        <composite>.\im\composite.exe</composite>
+        <ghostscript>.\gs\bin\gswin64c.exe</ghostscript>
+        <exiftool>.\exiftool\exiftool.exe</exiftool>
+        <exiftoolthumb>.\exiftool\exiftoolthumb.bat</exiftoolthumb>
+        <qt-faststart>.\ffmpeg\qt-faststart.exe</qt-faststart>
+        <unlock>.\unlocker\unlocker.exe</unlock>
+        <avconv>.\avconv\bin\avconv.exe</avconv>
+    </commandmap>
+
 </commandmaps>
