@@ -16,7 +16,7 @@
 		<mencodermkv>./mencodermkv.sh</mencodermkv>
 		<gitaddrepository>./gitaddrepository.sh</gitaddrepository>
 		<asperaupload>./aspera/upload.sh</asperaupload>
-		<setupclient>./setupclient.sh</setupclient>
+		<setupclient>/usr/share/entermediadb/bin/setupclient.sh</setupclient>
 	</commandmap>
     <commandmap os="WINDOWS">
         <commandbase>..\tools</commandbase>

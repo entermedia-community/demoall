@@ -65,7 +65,7 @@
          APR (HTTP/AJP) Connector: /docs/apr.html
          Define a non-SSL HTTP/1.1 Connector on port 8080
     -->
-    <Connector port="8080" protocol="HTTP/1.1"
+    <Connector port="8080" protocol="HTTP/1.1"  URIEncoding="UTF-8"
                connectionTimeout="20000"
                redirectPort="8443" />
     <!-- A "Connector" using the shared thread pool-->
@@ -135,7 +135,7 @@
                prefix="localhost_access_log" suffix=".txt"
                pattern="%h %l %u %t &quot;%r&quot; %s %b" />
 
-		<Context path="/" docBase="/home/shanti/git/demoall/webapp"  reloadable="true"  >
+		<Context path="/" docBase="${catalina.home}/webapp"  reloadable="true"  >
 		</Context>
 
       </Host>
