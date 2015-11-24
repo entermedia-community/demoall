@@ -17,6 +17,7 @@
 		<gitaddrepository>./gitaddrepository.sh</gitaddrepository>
 		<asperaupload>./aspera/upload.sh</asperaupload>
 		<setupclient>/usr/share/entermediadb/bin/setupclient.sh</setupclient>
+		<insync-headless>/home/entermedia/insync-portable/insync-portable</insync-headless>
 	</commandmap>
     <commandmap os="WINDOWS">
         <commandbase>..\tools</commandbase>
