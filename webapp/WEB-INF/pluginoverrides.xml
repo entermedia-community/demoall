@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <beans>
-	<bean id="postMail" class="org.entermedia.email.PostMail">
+	<bean id="postMail" class="org.entermediadb.email.PostMail">
 		<property name="smtpUsername">
 			<value>demo@entermediasoftware.com</value>
 		</property>

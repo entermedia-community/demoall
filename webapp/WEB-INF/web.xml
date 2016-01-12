@@ -17,7 +17,7 @@
 
 	<filter>
 		<filter-name>EMFilter</filter-name>
-		<filter-class>com.openedit.servlet.OpenEditFilter</filter-class>
+		<filter-class>org.openedit.servlet.OpenEditFilter</filter-class>
 	</filter>
 		
 			
