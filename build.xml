@@ -50,10 +50,10 @@
 
 	<get dest="${build}/install.xml" src="http://dev.entermediasoftware.com/jenkins/job/${branch}em-mobile/lastSuccessfulBuild/artifact/deploy/install.xml"/>
 	<ant antfile="${build}/install.xml" inheritAll="false" dir="${wardir}/WEB-INF/" target="default"/> 
-
+<!--
 	<get dest="${build}/install.xml" src="http://dev.entermediasoftware.com/jenkins/job/${branch}extension-ooffice/lastSuccessfulBuild/artifact/deploy/install.xml"/>
 	<ant antfile="${build}/install.xml" inheritAll="false" dir="${wardir}/WEB-INF/" target="default"/> 
-
+-->
 	<get dest="${build}/install.xml" src="http://dev.entermediasoftware.com/jenkins/job/${branch}extension-openedit/lastSuccessfulBuild/artifact/deploy/install.xml"/>
 	<ant antfile="${build}/install.xml" inheritAll="false" dir="${wardir}/WEB-INF/" target="default"/> 
 
