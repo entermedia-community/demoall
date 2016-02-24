@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root> 
+  <data deploypath="/assets/emshare" module="$data.module" name="EM Share" id="AVMU_jBKfhBvlPnVv87Q"/>  
+  <data deploypath="/assets/mediadb" module="$data.module" name="MediaDB" id="AVMU_k66fhBvlPnVv87R"/>
+</root>
