@@ -2,5 +2,5 @@
 
 <page>
   <property name="fallbackdirectory">/media/catalog</property>
-  <property name="catalogid">qa/catalog</property>
+  <property name="catalogid">assets/catalog</property>
 </page>
