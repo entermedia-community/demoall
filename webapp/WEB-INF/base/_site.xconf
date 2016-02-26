@@ -67,7 +67,7 @@
 	<!-- Enables editing and checks for missing pages -->
 	<page-action name="Admin.allowEditing"/>
 
-  <property name="oe.edit.draftedits">false</property>
+  <property name="oe_edit_draftedits">false</property>
   
   <!-- autologin password expiry (in days) provided in email -->
   <property name="temporary_password_expiry">1</property>
