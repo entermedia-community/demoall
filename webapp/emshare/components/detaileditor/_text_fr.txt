@@ -1,0 +1,27 @@
+#
+#Tue Dec 01 11:06:19 EST 2015
+Share=part
+Permissions=autorisations
+Save\ values=Enregistrer les valeurs
+Categories=Cat\u00E9gories
+History=Histoire
+Image\ Crop=Photo Crop
+File=Fichier
+Geo\ Location=Emplacement g\u00E9ographique
+Preview=Aper\u00E7u
+Yes=oui
+Download=T\u00E9l\u00E9charger
+No=aucun
+Results=R\u00E9sultats
+Delete=Effacer
+Print=Impression
+Comments\ (0)=Commentaires (0 )
+Delete\ Assets=supprimer actifs
+No\ data\ has\ been\ entered.=Aucune donn\u00E9e n'a \u00E9t\u00E9 entr\u00E9 .
+Edit\ Metadata=Modifier les m\u00E9tadonn\u00E9es
+Attachments=Pi\u00E8ces jointes
+Cancel=annuler
+Tags=Mots cl\u00E9s
+Edit=\u00E9diter
+Conversions=Conversions
+Libraries=biblioth\u00E8ques

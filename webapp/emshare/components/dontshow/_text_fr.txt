@@ -1,0 +1,9 @@
+#
+#Tue Dec 01 11:05:42 EST 2015
+Edit\ Status=Modifier Statut
+None=aucun
+All=tous
+Libraries=biblioth\u00E8ques
+Filters=filtres
+File\ Format=Format de fichier
+Asset\ Type=Type d'actif

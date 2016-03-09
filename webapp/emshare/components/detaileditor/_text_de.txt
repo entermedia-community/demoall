@@ -1,0 +1,25 @@
+#
+#Thu Jan 28 15:08:13 EST 2016
+Share=Teilen
+Permissions=Berechtigungen
+History=Geschichte
+Save\ values=Werte speichern
+Categories=Kategorien
+File=Datei
+Geo\ Location=Geografischer Standort
+Preview=Vorschau
+Download=Download
+Results=Ergebnisse
+Delete=l\u00F6schen
+Edit\ =bearbeiten
+Print=drucken
+Comments\ (0)=Kommentare (0)
+Delete\ Assets=Assets l\u00F6schen
+No\ data\ has\ been\ entered.=Es wurdenkeine Daten eingegeben.
+Edit\ Metadata=Bearbeiten von Metadaten
+Attachments=Anh\u00E4nge
+Cancel=abbrechen
+Tags=Schlagworte
+Edit=bearbeiten
+Conversions=Konvertierungen
+Libraries=Bibliotheken

@@ -1,0 +1,7 @@
+#
+#Thu Jan 28 14:59:23 EST 2016
+Edit\ Status=Bearbeitungsstatus
+Libraries=Bibliotheken
+Filters=Filter
+File\ Format=Datei Format
+Asset\ Type=Asset-Typ

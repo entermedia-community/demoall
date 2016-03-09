@@ -1,0 +1,13 @@
+#
+#Thu Jan 28 15:43:41 EST 2016
+Items=Artikel
+Document\ Preview=Dokumentvorschau
+Original\ Format=Originalformat
+Attachments=Anh\u00E4nge
+Downloading=Herunterladen
+Next=N\u00E4chster
+Please\ choose\ a\ download\ format\ for\ each\ type\ of\ asset.=w\u00E4hlen Sie bitte ein Format zum Herunterladen f\u00FCr jede Art von Verm\u00F6genswerten.
+Documents=Unterlagen
+Document\ Crop=Dokument Ernte
+Invalid\ order,\ username\ does\ not\ match=ung\u00FCltige Ordnung, Benutzernamen stimmt nicht \u00FCberein
+Session\ expired,\ Reload\ browser=Sitzung abgelaufen ist, reload Browser

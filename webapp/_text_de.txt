@@ -1,0 +1,6 @@
+#
+#Thu Jan 28 14:58:56 EST 2016
+Manager=Manager
+Note\:\ the\ default\ login\ is=Hinweis\: Der Standard-Login ist
+Powered\ by=unterst\u00FCtzt von
+Ask\ Us=Frag uns

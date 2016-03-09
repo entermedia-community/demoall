@@ -1,0 +1,32 @@
+#
+#Thu Jan 28 15:43:39 EST 2016
+Home=Zuhause
+Manager=Manager
+Contacts=Kontakte
+closed=geschlossen
+Minimize=minimieren
+Preview=Vorschau
+Download=Download
+Collections=Sammlungen
+There\ was\ a\ problem\ completing\ this\ request=es gab ein Problem beim Abschluss dieser Anfrage
+Related\ Media=verwandte Medien
+Assets=Verm\u00F6genswerte
+Divisions=Gesch\u00E4ftsbereiche
+My\ Account=mein Konto
+the\ application.=der Antrag.
+Maximize=maximieren
+Projects=Projekte
+Selected\ Media=ausgew\u00E4hlte Medien
+open=ge\u00F6ffnet
+Applications=Anwendungen
+System\ Settings=Systemeinstellungen
+Logout=Logout
+Asset\ is\ missing=Asset fehlt
+Login=einloggen
+Search...=Suche...
+Add\ Media=Medien hinzuf\u00FCgen
+Upload\ Media=Upload Medien
+Settings=Einstellungen
+Libraries=Bibliotheken
+Hamburgers=Hamburger
+Orders=Bestellungen
