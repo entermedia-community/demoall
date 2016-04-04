@@ -3,6 +3,6 @@
 <page>
   <property name="fallbackdirectory">/WEB-INF/base/mediadb</property>
   <property name="appmodule">asset</property>
-  <property name="catalogid">assets/public</property>
+  <property name="catalogid">assets/catalog</property>
   <property name="applicationid">assets/mediadb</property>
 </page>
