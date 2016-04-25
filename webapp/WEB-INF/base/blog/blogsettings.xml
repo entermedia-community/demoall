@@ -5,7 +5,7 @@
   <!--  if you comment out hostname, it will try to autoconfigure -->
   <hostname>http://localhost:8080/</hostname>
   <author>Me</author>
-  <description>Example Settings</description>
+  <caption>Example Settings</caption>
   <auto-publish-entries>true</auto-publish-entries>
 
   <allow-anonymous-comments>true</allow-anonymous-comments>

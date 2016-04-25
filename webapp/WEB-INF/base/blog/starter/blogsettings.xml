@@ -10,12 +10,12 @@
   <!-- archive-root-directory>/blog/permalink</archive-root-directory -->
 
   <author>admin</author>
-  <description>My cool OE blog</description>
+  <caption>My cool OE blog</caption>
   <auto-publish-entries>true</auto-publish-entries>
   <allow-anonymous-comments>true</allow-anonymous-comments>
   <auto-publish-comments>true</auto-publish-comments>
-  <question id="1" description="4 + 5 = " answer="9" />
-  <question id="2" description="5 - 4 = " answer="1" />
-  <question id="3" description="4 + 3 = " answer="7" />
-  <question id="4" description="40 + 0 = " answer="40" />
+  <question id="1" caption="4 + 5 = " answer="9" />
+  <question id="2" caption="5 - 4 = " answer="1" />
+  <question id="3" caption="4 + 3 = " answer="7" />
+  <question id="4" caption="40 + 0 = " answer="40" />
 </blog>

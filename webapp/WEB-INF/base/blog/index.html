@@ -3,7 +3,7 @@
 		<div class="oeblogpost">
 		    <h1 class="oeblogpost-title">$entry.title</h1>
 		    <div id="oeblogpost-description">
-				$entry.description.value
+				$entry.caption.value
 		    </div>		
   	#if( $entry.user.userName == $user.userName ) 
   		[<a class="small" class="pageTitle" href="${home}${bloghome}/useradmin/togglevisible.html?entryId=${entry.id}&origURL=$content.path">#if( $entry.isVisible() )Unpublish#else
