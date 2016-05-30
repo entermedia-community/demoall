@@ -20,32 +20,13 @@
   
 $pages.include("${themeprefix}/layouts/includes.html")
 
-<script type="text/javascript" src="//assets.zendesk.com/external/zenbox/v2.6/zenbox.js"></script>
-<style type="text/css" media="screen, projection">
-  @import url(//assets.zendesk.com/external/zenbox/v2.6/zenbox.css);
-</style>
+
 
 
 </head>
 <body id="embody" showadmintoolbar="$canshowadmintoolbar" #if ($userprofile.maximize_screen && $userprofile.maximize_screen == "true") class="max" #end>
 		$pages.streamContent()
-	<script type="text/javascript" src="//assets.zendesk.com/external/zenbox/v2.6/zenbox.js"></script>
-<style type="text/css" media="screen, projection">
-  @import url(//assets.zendesk.com/external/zenbox/v2.6/zenbox.css);
-</style>
-
-<script type="text/javascript">
-  if (typeof(Zenbox) !== "undefined") {
-    Zenbox.init({
-      dropboxID:   "20320113",
-      url:         "https://entermedia.zendesk.com",
-      tabTooltip:  "Ask Us",
-      tabImageURL: "https://p4.zdassets.com/external/zenbox/images/tab_ask_us_right.png",
-      tabColor:    "black",
-      tabPosition: "Right"
-    });
-  }
-</script>
+	
 		
 </body>
 </html>
