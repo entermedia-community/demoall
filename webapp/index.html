@@ -11,13 +11,14 @@
 
 
 			<div class="clearfix">
+	
+			            
+<p class="app-title">Note: the default login is admin / admin</p>
 				
 <p>
 <a href="/manager/" class="btn">[[Catalog Administration]]</a>
 </p>
-			            
-<p class="app-title">Note: the default login is admin / admin</p>
-
+	
 			#set( $catalogs = $searcherManager.getSearcher("system","catalog").fieldSearch("id","*","name") )
 			#foreach($cat in $catalogs)
 				<h3>$cat</h3>

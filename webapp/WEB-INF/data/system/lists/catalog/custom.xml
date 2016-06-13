@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <root> 
-  <data id="assets/catalog" name="Assets" rootpath="/assets"/>  
+  <data id="assets/catalog" name="Archive" rootpath="/assets"/>  
   <data id="openinstitute/catalog" name="Open Institute" rootpath="/openinstitute"/>
 </root>
