@@ -11,25 +11,27 @@
 
 
 			<div class="clearfix">
-				<div class="list-container">
+				
+<p>
+<a href="/manager/" class="btn">[[Catalog Administration]]</a>
+</p>
 			            
 <p class="app-title">Note: the default login is admin / admin</p>
 
+			#set( $catalogs = $searcherManager.getSearcher("system","catalog").fieldSearch("id","*","name") )
+			#foreach($cat in $catalogs)
+				<h3>$cat</h3>
 					<ul class="server-links">
-
-						#set( $catalogs = $searcherManager.getList("system","catalog") )
-						#foreach($cat in $catalogs)
-						
 						#set( $sitesearcher = $searcherManager.getSearcher($cat.getId(),"app") )
-						#set( $sites = $sitesearcher.getAllHits() )
+						#set( $sites = $sitesearcher.fieldSearch("id","*","nameDown") )
 						
 						#foreach( $site in $sites)
-								<li ><a class="section-title" href="$site.deploypath">$site <span>($site.deploypath)</span></a></li>
+								<li ><a class="section-title" href="$site.deploypath">  <span>($site.deploypath)</span> $site</a></li>
 						#end
-						#end						
 					</ul>
-				</div>
+						#end						
 			</div>
+
 			
 			<iframe src="http://d3lx96450149dy.cloudfront.net/em_site/mediadb/services/module/asset/players/play/AUzn9hgudmbSg1B1eeVV.html" width="100%" height="500" scrolling="no" style="border:none"></iframe>
 
@@ -39,21 +41,3 @@
                     Powered by EnterMedia | <a href="http://www.entermediadb.org">www.entermediadb.org</a>
                 </p>
             </div>
-
-            <script type="text/javascript" src="//assets.zendesk.com/external/zenbox/v2.6/zenbox.js"></script>
-<style type="text/css" media="screen, projection">
-  @import url(//assets.zendesk.com/external/zenbox/v2.6/zenbox.css);
-</style>
-<script type="text/javascript">
-  if (typeof(Zenbox) !== "undefined") {
-    Zenbox.init({
-      dropboxID:   "20316683",
-      url:         "https://entermedia.zendesk.com",
-      tabTooltip:  "Ask Us",
-      tabImageURL: "https://p4.zdassets.com/external/zenbox/images/tab_ask_us.png",
-      tabColor:    "black",
-      tabPosition: "Left"
-    });
-  }
-</script>
-</script>
