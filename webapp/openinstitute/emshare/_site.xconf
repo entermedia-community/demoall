@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<page>
+  <property name="themeid">openinstitute</property>
+  <property name="fallbackdirectory">/WEB-INF/base/emshare</property>
+  <property name="catalogid">openinstitute/catalog</property>
+  <property name="applicationid">openinstitute/emshare</property>
+  <property name="title">Open Institute</property>
+</page>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root> 
+  <data deploypath="/openinstitute/emshare" name="EM Share" id="VVKHxBAECcJfH8Tgp4So"/>  
+  <data deploypath="/openinstitute/mediadb" name="MediaDB API" id="VVKHygSECcJfH8Tgp4To"/>  
+  <data deploypath="/openinstitute/em-mobile"  name="EM Mobile Portal" id="VVKH3nhECcJfH8Tgp4Uo"/>
+</root>
