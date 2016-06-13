@@ -19,7 +19,7 @@
 <a href="/manager/" class="btn">[[Catalog Administration]]</a>
 </p>
 	
-			#set( $catalogs = $searcherManager.getSearcher("system","catalog").fieldSearch("id","*","name") )
+			#set( $catalogs = $searcherManager.getSearcher("system","catalog").fieldSearch("id","*","nameDown") )
 			#foreach($cat in $catalogs)
 				<h3>$cat</h3>
 					<ul class="server-links">
