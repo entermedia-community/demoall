@@ -15,10 +15,6 @@
 			            
 <p class="app-title">Note: the default login is admin / admin</p>
 				
-<p>
-<a href="/manager/" class="btn">[[Catalog Administration]]</a>
-</p>
-	
 			#set( $catalogs = $searcherManager.getSearcher("system","catalog").fieldSearch("id","*","nameDown") )
 			#foreach($cat in $catalogs)
 				<h3>$cat</h3>
@@ -32,6 +28,11 @@
 					</ul>
 						#end						
 			</div>
+
+<p>
+<a href="/manager/" class="btn">[[Catalog Administration]]</a>
+</p>
+	
 
 			
 			<iframe src="http://d3lx96450149dy.cloudfront.net/em_site/mediadb/services/module/asset/players/play/AUzn9hgudmbSg1B1eeVV.html" width="100%" height="500" scrolling="no" style="border:none"></iframe>
