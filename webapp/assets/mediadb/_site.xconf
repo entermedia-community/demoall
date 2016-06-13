@@ -2,7 +2,6 @@
 
 <page>
   <property name="fallbackdirectory">/WEB-INF/base/mediadb</property>
-  <property name="appmodule">$data.module</property>
   <property name="catalogid">assets/catalog</property>
   <property name="applicationid">assets/mediadb</property>
 </page>
