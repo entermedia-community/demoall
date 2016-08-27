@@ -1,7 +1,9 @@
 <node id="singlenode" name="Default Single Node">
 
     <property id="cluster.name">entermedia-em9clusterCB</property>
-     <property id="index.number_of_replicas">2</property>
+    <!--  This should be 1 for single node systems and 2 for more than one node -->
+     <property id="index.number_of_replicas">1</property>
+     
      <property id="index.number_of_shards">5</property>
      <property id="index.mapping._id.indexed">true</property>
     <property id="path.home">${webroot}/WEB-INF/elastic/${nodeid}</property>
