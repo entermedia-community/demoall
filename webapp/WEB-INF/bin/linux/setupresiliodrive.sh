@@ -15,7 +15,7 @@ kill -9 $PID
 
 
 #Sed conf file
-sed  -e "s|%PATH%|${THEPATH}|g" -e "s|%SECRET%|${THESECRET}|g"  <"sync.conf.template" >"~/.sync.conf"
+sed  -e "s|%PATH%|${THEPATH}|g" -e "s|%SECRET%|${THESECRET}|g"  <"sync.conf.template" > ~/.sync.conf
 
 #Run add  --nodaemon to debug
 rslsync --config ~/.sync.conf 
