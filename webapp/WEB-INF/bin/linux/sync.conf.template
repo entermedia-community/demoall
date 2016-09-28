@@ -55,9 +55,8 @@
 /* !!! if you set shared folders in config file WebUI will be DISABLED !!!
    shared directories specified in config file  override the folders previously added from WebUI. */
 ,
-  "shared_folders" :
-  [
-    {
+  "shared_folders":[
+   	{
       "secret" : "%SECRET%", // required field - use --generate-secret in command line to create new secret
       "dir" : "%PATH%", // * required field
       "use_relay_server" : false, 
@@ -66,7 +65,7 @@
       "use_sync_trash" : true, //enable SyncArchive to store files deleted on remote devices
       "overwrite_changes" : false, // restore modified files to original version, ONLY for Read-Only folders
       "selective_sync" : false // add folder in selective sync mode
-    }
+    }   
   ]
 
 
