@@ -4,7 +4,7 @@ if [ "$#" -ne 2 ]; then
    echo "Illegal number of parameters, restart , Config File Required"
    exit
 fi
-THECONFIG=$1
+THECONFIG=$2
 
 killall rslsync
 
