@@ -4,8 +4,9 @@ if [ "$#" -ne 2 ]; then
    echo "Illegal number of parameters, restart , Config File Required"
    exit
 fi
-THECONFIG=$2
+THECONFIGDIR=$2
 
 killall rslsync
+HOME=/home/entermedia
 
-rslsync --config "$THECONFIG"
+rslsync --config $THECONFIGDIR/sync.conf --log $THECONFIGDIR/sync.log  
