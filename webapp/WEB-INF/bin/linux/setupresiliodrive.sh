@@ -8,5 +8,7 @@ THECONFIGDIR=$2
 
 killall rslsync
 HOME=/home/entermedia
-
+export HOME
+cd $HOME
+sleep 5
 rslsync --config $THECONFIGDIR/sync.conf --log $THECONFIGDIR/sync.log  
