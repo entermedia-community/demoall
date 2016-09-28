@@ -1,23 +1,11 @@
 #!/bin/bash +x
-# USAGE setupresiliodrive.sh SECRET /path/to/hotfolder 
-
+# USAGE setupresiliodrive.sh SECRET /path/to/hotfolder
 if [ "$#" -ne 2 ]; then
-    echo "Illegal number of parameters, Secret and Path required"
-    exit
+   echo "Illegal number of parameters, restart , Config File Required"
+   exit
 fi
+THECONFIG=$1
 
-THESECRET=$1
-THEPATH=$2
+killall rslsync
 
-
-PID=$(ps -ef | grep rslsync | grep -v "grep" | awk '{print $2}')
-kill -9 $PID
-
-
-#Sed conf file
-sed  -e "s|%PATH%|${THEPATH}|g" -e "s|%SECRET%|${THESECRET}|g"  <"sync.conf.template" > ~/.sync.conf
-
-#Run add  --nodaemon to debug
-rslsync --config ~/.sync.conf 
-
- 
+rslsync --config "$THECONFIG"
