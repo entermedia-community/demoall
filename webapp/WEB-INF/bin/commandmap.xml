@@ -17,6 +17,7 @@
 		<gitaddrepository>./gitaddrepository.sh</gitaddrepository>
 		<asperaupload>./aspera/upload.sh</asperaupload>
 		<setupresiliodrive>./setupresiliodrive.sh</setupresiliodrive>
+		<setupinsyncdrive>./setupinsyncdrive.sh</setupinsyncdrive>
 		<setupclient>/usr/share/entermediadb/bin/setupclient.sh</setupclient>
 	</commandmap>
     <commandmap os="WINDOWS">

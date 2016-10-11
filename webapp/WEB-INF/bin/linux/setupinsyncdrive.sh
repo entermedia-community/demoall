@@ -5,10 +5,15 @@ if [ "$#" -ne 3 ]; then
    exit
 fi
 
-THECONFIGDIR=$2
-THEAUTHCODE=$3
+##			List<String> com = Arrays.asList("add_account","-a", key,"-p",hotfolderpath,"-e","link");
+##			ExecResult result = getExec().runExec("insync-portable",com,true);
 
-HOME=/home/entermedia
+
+HOMEDIR=$1
+THEAUTHCODE=$2
+HOTFOLDER=$3
+
+HOME=$HOMEDIR
 export HOME
 cd $HOME
 
@@ -20,8 +25,6 @@ if [[ ${ISRUNNING} =~ ${RUNNING} ]];then
    echo "Starting insync"
    insync-portable start
 fi
-#insync-portable quit
-
-sleep 5
-insync-portable add_account -a $THEAUTHCODE $THECONFIGDIR
+sleep 2
+insync-portable add_account -a $THEAUTHCODE -e link -p $HOTFOLDER
   
