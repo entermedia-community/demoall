@@ -7,7 +7,7 @@ fi
 THECONFIGDIR=$2
 
 killall rslsync
-HOME=/home/entermedia
+HOME=$THECONFIGDIR
 export HOME
 cd $HOME
 sleep 5
