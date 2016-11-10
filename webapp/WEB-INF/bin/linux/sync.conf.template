@@ -38,8 +38,8 @@
   {
     "listen" : "0.0.0.0:8888" // remove field to disable WebUI
 /* preset credentials. Use password or password_hash */
-    ,"login" : "admin"
-    ,"password" : "password1"
+//    ,"login" : "admin"
+//   ,"password" : "password1"
 //  ,"password_hash" : "some_hash" // password hash in crypt(3) format
 //  ,"allow_empty_password" : false // Defaults to true
 /* ssl configuration */
@@ -59,9 +59,9 @@
    	{
       "secret" : "%SECRET%", // required field - use --generate-secret in command line to create new secret
       "dir" : "%PATH%", // * required field
-      "use_relay_server" : false, 
-      "use_tracker" : false,
-      "search_lan" : false,
+      "use_relay_server" : true, 
+      "use_tracker" : true,
+      "search_lan" : true,
       "use_sync_trash" : true, //enable SyncArchive to store files deleted on remote devices
       "overwrite_changes" : false, // restore modified files to original version, ONLY for Read-Only folders
       "selective_sync" : false // add folder in selective sync mode
