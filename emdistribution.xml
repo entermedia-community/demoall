@@ -1,5 +1,13 @@
 <plugins>
 
+<!-- 
+	<plugin id="entermedia-server" title="EnterMedia Server" currentversion="7.282" installscript="http://dev.entermediasoftware.com/jenkins/job/em9_entermedia-server/lastSuccessfulBuild/artifact/deploy/install.js" depends="">
+		<description>Base platforms</description>
+		<currentversionnotes>
+</currentversionnotes>
+
+ -->
+
 	<plugin id="entermedia-server" title="EnterMedia Server" currentversion="7.282" installscript="http://dev.entermediasoftware.com/jenkins/job/em9dev_entermedia-server/lastSuccessfulBuild/artifact/deploy/install.js" depends="">
 		<description>Base platforms</description>
 		<currentversionnotes>
