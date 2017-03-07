@@ -5,171 +5,21 @@
 		<description>Base platforms</description>
 		<currentversionnotes>
 </currentversionnotes>
-
  -->
-
 	<plugin id="entermedia-server" title="EnterMedia Server" currentversion="7.282" installscript="http://dev.entermediasoftware.com/jenkins/job/em9dev_entermedia-server/lastSuccessfulBuild/artifact/deploy/install.js" depends="">
 		<description>Base platforms</description>
 		<currentversionnotes>
-</currentversionnotes>
-
+	</currentversionnotes>
 	</plugin>
+
 	<plugin id="extension-openedit" title="OpenEdit CMS" currentversion="1.51" installscript="http://dev.entermediasoftware.com/jenkins/job/em9dev_extension-openedit/lastSuccessfulBuild/artifact/deploy/install.js" depends="entermedia-server">
 		<description>Online HTML editor</description>
 		<currentversionnotes></currentversionnotes>
 	</plugin>
 
-
-          <plugin id="app-emshare" title="EMShare" currentversion="8" installscript="http://dev.entermediasoftware.com/jenkins/job/em9dev_app-emshare/lastSuccessfulBuild/artifact/deploy/install.js" depends="entermedia-server">
-                <description>EMShare</description>
-                <currentversionnotes></currentversionnotes>
-        </plugin>
+    <plugin id="app-emshare" title="EMShare" currentversion="8" installscript="http://dev.entermediasoftware.com/jenkins/job/em9dev_app-emshare/lastSuccessfulBuild/artifact/deploy/install.js" depends="entermedia-server">
+            <description>EMShare</description>
+            <currentversionnotes></currentversionnotes>
+    </plugin>
         
-  <plugin id="em-mobile" title="App EM-Mobile" currentversion="8" installscript="http://dev.entermediasoftware.com/jenkins/job/em9dev_em-mobile/lastSuccessfulBuild/artifact/deploy/install.js" depends="entermedia-server">
-                  <description>EM-Mobile</description>
-                                  <currentversionnotes></currentversionnotes>
-                                          </plugin>
-
-        
-   <plugin id="app-empush" title="EM Push" currentversion="8" installscript="http://dev.entermediasoftware.com/jenkins/job/em9dev_app-empush/lastSuccessfulBuild/artifact/deploy/install.js" depends="entermedia-server">
-                <description>EM Push</description>
-                <currentversionnotes></currentversionnotes>
-        </plugin>
-
-   <plugin id="extension-aws" title="Amazon AWS" currentversion="8" installscript="http://dev.entermediasoftware.com/jenkins/job/em9dev_extension-aws/lastSuccessfulBuild/artifact/deploy/install.js" depends="entermedia-server">
-                <description>Pubishing to AWS and HotFolder Support</description>
-                <currentversionnotes></currentversionnotes>
-        </plugin>
-
-  <plugin id="extension-youtube" title="EM Youtube Publisher" currentversion="8" installscript="http://dev.entermediasoftware.com/jenkins/job/em9dev_extension-youtube/lastSuccessfulBuild/artifact/deploy/install.js" depends="entermedia-server">
-                <description>EM Youtube Publisher</description>
-                <currentversionnotes></currentversionnotes>
-        </plugin>
-
-<!--
-	<plugin id="extension-cumulus" title="Cumulus Connector" currentversion="2.32" installscript="http://dev.entermediasoftware.com/jenkins/job/extension-cumulus/lastSuccessfulBuild/artifact/deploy/install.js" depends="entermedia-server">
-		<description>Enables importing and saving to Cumulus servers</description>
-		<currentversionnotes></currentversionnotes>
-
-	</plugin>
--->
-	<plugin id="extension-ooffice" title="EnterMedia Office" currentversion="2.10" installscript="http://dev.entermediasoftware.com/jenkins/job/em9dev_extension-ooffice/lastSuccessfulBuild/artifact/deploy/install.js" depends="entermedia-server">
-		<description>Enables support for most Micorosft file formats</description>
-		<currentversionnotes></currentversionnotes>
-	</plugin>
-
-<plugin id="extension-avconv" title="Extension avconv master" installscript="http://dev.entermediasoftware.com/jenkins/job/em9dev_extension-avconv/lastSuccessfulBuild/artifact/deploy/install.js" depends="entermedia-server">
-                  <description>AV Lib Tools</description>
-                                                                     <currentversionnotes></currentversionnotes>
-                                                                                                                                                                 </plugin>
-
-<plugin id="extension-cmis" title="CMIS Support" currentversion="2.10" installscript="http://dev.entermediasoftware.com/jenkins/job/em9dev_extension-cmis/lastSuccessfulBuild/artifact/deploy/install.js" depends="entermedia-server">
-		<description>Enables support for CMIS connections to EnterMedia</description>
-		<currentversionnotes></currentversionnotes>
-	</plugin>
-	
-	
-	
-	
-
-	<plugin id="em9dev_mediamoneymaker" title="App Media Money Maker dev" currentversion="5.2260" installscript="http://dev.entermediasoftware.com/jenkins/job/em9dev_app-mediamoneymaker/lastSuccessfulBuild/artifact/deploy/install.js" depends="entermedia-server">
-		<description>eCommerce and checkout process</description>
-		<currentversionnotes></currentversionnotes>
-
-	</plugin>
-	
-	
-
-<!--
-	<plugin id="extension-rhozet" title="EnterMedia Rhozet" currentversion="0.76" installscript="http://dev.entermediasoftware.com/jenkins/job/extension-rhozet/lastSuccessfulBuild/artifact/deploy/install.js" depends="entermedia-server">
-		<description>Enables support for the Rhozet transcoding engine</description>
-		<currentversionnotes>
-</currentversionnotes>
-	</plugin>
-	<plugin id="extension-aspera" title="EnterMedia Aspera" currentversion="" installscript="http://dev.entermediasoftware.com/jenkins/job/extension-aspera/lastSuccessfulBuild/artifact/deploy/install.js" depends="entermedia-server">
-		<description>Enables support for Aspera file transfers</description>
-		<currentversionnotes></currentversionnotes>
-	</plugin>
-	<plugin id="extension-webdav" title="EnterMedia WebDav" currentversion="" installscript="http://dev.entermediasoftware.com/jenkins/job/extension-webdav/lastSuccessfulBuild/artifact/deploy/install.js" depends="entermedia-server">
-		<description>Enables support for Aspera file transfers</description>
-		<currentversionnotes></currentversionnotes>
-	</plugin>
-	<plugin id="extension-elasticsearch" title="ElasticSearch" currentversion="" installscript="http://dev.entermediasoftware.com/jenkins/job/extension-elasticsearch/lastSuccessfulBuild/artifact/deploy/install.js" depends="entermedia-server">
-		<description>Enables support for Aspera file transfers</description>
-		<currentversionnotes></currentversionnotes>
-	</plugin>
-	<plugin id="extension-episode" title="Episode" currentversion="" installscript="http://dev.entermediasoftware.com/jenkins/job/extension-episode/lastSuccessfulBuild/artifact/deploy/install.js" depends="entermedia-server">
-	<plugin id="extension-episode" title="Episode" currentversion="" installscript="http://dev.entermediasoftware.com/jenkins/job/extension-episode/lastSuccessfulBuild/artifact/deploy/install.js" depends="entermedia-server">
-		<description>Enables support for Aspera file transfers</description>
-		<currentversionnotes></currentversionnotes>
-	</plugin>
-	<plugin id="extension-sql" title="SQL" currentversion="" installscript="http://dev.entermediasoftware.com/jenkins/job/extension-sql/lastSuccessfulBuild/artifact/deploy/install.js" depends="entermedia-server">
-		<description>Enables support for Aspera file transfers</description>
-		<currentversionnotes></currentversionnotes>
-	</plugin>
-	<plugin id="extension-uploader" title="Uploader" currentversion="" installscript="http://dev.entermediasoftware.com/jenkins/job/extension-uploader/lastSuccessfulBuild/artifact/deploy/install.js" depends="entermedia-server">
-		<description>Enables support for Aspera file transfers</description>
-		<currentversionnotes></currentversionnotes>
-	</plugin>
-	<plugin id="extension-smartjog" title="EnterMedia SmartJog" currentversion="0.15" installscript="http://dev.entermediasoftware.com/jenkins/job/extension-smartjog/lastSuccessfulBuild/artifact/deploy/install.js" depends="entermedia-server">
-		<description>Enables support for SmartJog</description>
-
-		<currentversionnotes>
-</currentversionnotes>
-
-	</plugin>
-	<plugin id="extension-oraclesso" title="EnterMedia Oracle SSO" currentversion="0.1" installscript="http://dev.entermediasoftware.com/jenkins/job/extension-oraclesso/lastSuccessfulBuild/artifact/deploy/install.js" depends="entermedia-server">
-		<description>Enables support for SSO</description>
-
-		<currentversionnotes>
-</currentversionnotes>
-
-	</plugin>
-        <plugin id="extension-avconv" title="avconv Extension" installscript="http://dev.entermediasoftware.com/jenkins/job/extension-avconv/lastSuccessfulBuild/artifact/deploy/install.js" depends="entermedia-server">
-		<description>AV Lib Tools</description>
-		<currentversionnotes></currentversionnotes>
-	</plugin>
-	<plugin id="app-emtube" title="Emtube" currentversion="5.1170" installscript="http://dev.entermediasoftware.com/jenkins/job/app-emtube/lastSuccessfulBuild/artifact/deploy/install.js" depends="entermedia-server">
-		<description>YouTube Thing</description>
-		<currentversionnotes></currentversionnotes>
-	</plugin>
-	<plugin id="app-eml" title="Eml" currentversion="8" installscript="http://dev.entermediasoftware.com/jenkins/job/app-eml/lastSuccessfulBuild/artifact/deploy/install.js" depends="entermedia-server">
-		<description>EMLibrary</description>
-		<currentversionnotes></currentversionnotes>
-	</plugin>
-
-	<plugin id="app-loudmouth" title="LoudMouth" currentversion="5.1170" installscript="http://dev.entermediasoftware.com/jenkins/job/app-loudmouth/lastSuccessfulBuild/artifact/deploy/install.js" depends="entermedia-server">
-		<description>Blog feature</description>
-		<currentversionnotes></currentversionnotes>
-	</plugin>
-	<plugin id="app-mediamoneymaker" title="Media Money Maker" currentversion="5.2260" installscript="http://dev.entermediasoftware.com/jenkins/job/app-mediamoneymaker/lastSuccessfulBuild/artifact/deploy/install.js" depends="entermedia-server">
-		<description>eCommerce and checkout process</description>
-		<currentversionnotes></currentversionnotes>
-
-	</plugin>
-	<plugin id="app-scout" title="Scout" currentversion="5.1071" installscript="http://dev.entermediasoftware.com/jenkins/job/app-scout/lastSuccessfulBuild/artifact/deploy/install.js" depends="entermedia-server">
-		<description></description>
-		<currentversionnotes></currentversionnotes>
-	</plugin>
-	<plugin id="app-sundial" title="SunDial" currentversion="5.927" installscript="http://dev.entermediasoftware.com/jenkins/job/app-sundial/lastSuccessfulBuild/artifact/deploy/install.js" depends="entermedia-server">
-		<description>Event and calender API</description>
-		<currentversionnotes></currentversionnotes>
-
-	<plugin id="app-scout" title="Scout" currentversion="5.1071" installscript="http://dev.entermediasoftware.com/jenkins/job/app-scout/lastSuccessfulBuild/artifact/deploy/install.js" depends="entermedia-server">
-		<description></description>
-		<currentversionnotes></currentversionnotes>
-	</plugin>
-	<plugin id="app-sundial" title="SunDial" currentversion="5.927" installscript="http://dev.entermediasoftware.com/jenkins/job/app-sundial/lastSuccessfulBuild/artifact/deploy/install.js" depends="entermedia-server">
-		<description>Event and calender API</description>
-		<currentversionnotes></currentversionnotes>
-
-	</plugin>
-	<plugin id="app-workmonger" title="WorkMonger" currentversion="5.1246" installscript="http://dev.entermediasoftware.com/jenkins/job/app-workmonger/lastSuccessfulBuild/artifact/deploy/install.js" depends="entermedia-server,sundial">
-		<description>Issue/Job tracker</description>
-		<currentversionnotes>
-</currentversionnotes>
-
-	</plugin>
--->
-
 </plugins>
