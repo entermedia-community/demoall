@@ -19,6 +19,7 @@
 		<setupresiliodrive>./setupresiliodrive.sh</setupresiliodrive>
 		<setupinsyncdrive>./setupinsyncdrive.sh</setupinsyncdrive>
 		<setupclient>/usr/share/entermediadb/bin/setupclient.sh</setupclient>
+		<restartdocker>./restartdocker.sh</restartdocker>
 	</commandmap>
     <commandmap os="WINDOWS">
         <commandbase>..\tools</commandbase>
