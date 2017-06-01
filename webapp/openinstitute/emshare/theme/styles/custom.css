@@ -244,7 +244,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='', endColorst
 color: #D6D3D3;
 
 }
-
+#eml-tab-subnav span.text, #sub-nav span.text {
+color: #D6D3D3;
+}
 #eml-tab-subnav ul, #sub-nav {
 
 border-bottom: #8C5836;
