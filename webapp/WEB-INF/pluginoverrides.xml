@@ -15,7 +15,7 @@
 			<value>smtp.elasticemail.com</value>
 		</property>
 		<property name="port">
-			<value>25</value>
+			<value>2525</value>
 		</property>
 		<property name="pageManager">
 			<ref bean="pageManager" />
