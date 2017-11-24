@@ -20,6 +20,8 @@
 		<setupinsyncdrive>./setupinsyncdrive.sh</setupinsyncdrive>
 		<setupclient>/usr/share/entermediadb/bin/setupclient.sh</setupclient>
 		<restartdocker>./restartdocker.sh</restartdocker>
+		<avconv>ffmpeg</avconv>
+        <avprobe>ffprobe</avprobe>
 	</commandmap>
     <commandmap os="WINDOWS">
         <commandbase>..\tools</commandbase>
