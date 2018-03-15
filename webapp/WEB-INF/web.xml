@@ -29,10 +29,17 @@
 	    <filter-name>gzip</filter-name>
 	    <url-pattern>*.css</url-pattern>
 	</filter-mapping>
-
 	<filter-mapping>
 	    <filter-name>gzip</filter-name>
 	    <url-pattern>*.js</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+	    <filter-name>gzip</filter-name>
+	    <url-pattern>*.json</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+	    <filter-name>gzip</filter-name>
+	    <url-pattern>*.xml</url-pattern>
 	</filter-mapping>
 	
 	<filter-mapping>
