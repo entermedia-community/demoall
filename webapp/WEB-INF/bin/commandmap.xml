@@ -19,6 +19,8 @@
 		<setupresiliodrive>./setupresiliodrive.sh</setupresiliodrive>
 		<setupinsyncdrive>./setupinsyncdrive.sh</setupinsyncdrive>
 		<setupclient>/usr/share/entermediadb/bin/setupclient.sh</setupclient>
+		<disableclient>/usr/share/entermediadb/bin/disableclient.sh</disableclient>
+		<removeclient>/usr/share/entermediadb/bin/removeclient.sh</removeclient>
 		<restartdocker>./restartdocker.sh</restartdocker>
 		<avconv>ffmpeg</avconv>
         <avprobe>ffprobe</avprobe>
