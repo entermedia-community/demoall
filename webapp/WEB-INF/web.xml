@@ -12,7 +12,7 @@
 
 	<filter>
 	    <filter-name>gzip</filter-name>
-	    <filter-class>com.openedit.servlet.gzip.GzipFilter</filter-class>
+	    <filter-class>org.openedit.servlet.gzip.GZipServletFilter</filter-class>
 	</filter>
 
 	<filter>
@@ -40,10 +40,6 @@
 	<filter-mapping>
 	    <filter-name>gzip</filter-name>
 	    <url-pattern>*.xml</url-pattern>
-	</filter-mapping>
-	<filter-mapping>
-	    <filter-name>gzip</filter-name>
-	    <url-pattern>*.json</url-pattern>
 	</filter-mapping>
 	
 	<filter-mapping>
