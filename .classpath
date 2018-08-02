@@ -4,6 +4,6 @@
 	<classpathentry combineaccessrules="false" kind="src" path="/entermedia-core"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/entermedia-server"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/extension-openedit"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/tomcat9"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/resin4.x"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
