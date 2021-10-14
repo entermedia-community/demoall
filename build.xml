@@ -5,7 +5,7 @@
     <target name="dependency" depends="default"/>
     
 	<property name="appname" value="${ant.project.name}"/>
-	<property name="org" value="EnterMediaSoftware.com"/>
+	<property name="org" value="EnterMedia, Inc."/>
 	<property name="lib" location="${basedir}/lib"/>
 	<property name="etc" location="${basedir}/etc"/>
 	<property name="build" location="${basedir}/build"/>
@@ -62,8 +62,9 @@
 			<include name="WEB-INF/*.*" />
 			<include name="media/**" />
 			<include name="assets/**" />
+			<include name="finder/**" />
 			<include name="openinstitute/**" />
-			<include name="emshare/**" />
+			<!-- <include name="emshare/**" /> -->
 			<include name="theme/**" />
    			<include name="entermedia/_site.xconf" />
     		<include name="*.*" />
