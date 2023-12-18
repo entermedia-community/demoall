@@ -12,17 +12,9 @@
 	<property name="wardir" location="${build}/wartmp"/>
 	<property name="webapp" location="${basedir}/webapp"/>
 	<property name="webinf" location="${webapp}/WEB-INF"/>
-	<property name="branch" value="em10_" />
-		<property name="majorversion" value="7" />
-	<!-- 
-		========================================================================
-		Anthill build server properties.  These properties will be passed in
-		by anthill when this script is executed on the build server.
-		
-			- "version" is set by the version adapter
-			- "deployDir" is set by anthill.publish.dir
-		========================================================================
-	--> 
+	<property name="branch" value="em11_" />
+	<property name="majorversion" value="7" />
+	
 	<property environment="env" />
 
 	<property name="version"  value="${majorversion}.${env.BUILD_NUMBER}"/>
@@ -39,19 +31,14 @@
 
   <target name="update-dependencies" depends="clean">
     <mkdir dir="${wardir}/WEB-INF/" />
-	<get dest="${build}/install.xml" src="http://dev.entermediasoftware.com/jenkins/job/em10_entermedia-server/lastSuccessfulBuild/artifact/deploy/install.xml"/>
+	<get dest="${build}/install.xml" src="http://dev.entermediasoftware.com/jenkins/job/em11_entermedia-server/lastSuccessfulBuild/artifact/deploy/install.xml"/>
 	<ant antfile="${build}/install.xml" inheritAll="false" dir="${wardir}/WEB-INF/" target="default"/> 
 
-	<get dest="${build}/install.xml" src="http://dev.entermediasoftware.com/jenkins/job/em10_app-emshare/lastSuccessfulBuild/artifact/deploy/install.xml"/>
-	<ant antfile="${build}/install.xml" inheritAll="false" dir="${wardir}/WEB-INF/" target="default"/> 
-<!-- 
-	<get dest="${build}/install.xml" src="http://dev.entermediasoftware.com/jenkins/job/${branch}app-mediaapp/lastSuccessfulBuild/artifact/deploy/install.xml"/>
-	<ant antfile="${build}/install.xml" inheritAll="false" dir="${wardir}/WEB-INF/" target="default"/> 
- -->
-	<get dest="${build}/install.xml" src="http://dev.entermediasoftware.com/jenkins/job/em10_extension-openedit/lastSuccessfulBuild/artifact/deploy/install.xml"/>
+	<get dest="${build}/install.xml" src="http://dev.entermediasoftware.com/jenkins/job/em11_app-emshare/lastSuccessfulBuild/artifact/deploy/install.xml"/>
 	<ant antfile="${build}/install.xml" inheritAll="false" dir="${wardir}/WEB-INF/" target="default"/> 
 
-	
+  	<get dest="${build}/install.xml" src="http://dev.entermediasoftware.com/jenkins/job/em11_extension-openedit/lastSuccessfulBuild/artifact/deploy/install.xml"/>
+	<ant antfile="${build}/install.xml" inheritAll="false" dir="${wardir}/WEB-INF/" target="default"/> 
   	
 	<!-- Add tracker, loudmouth moneymaker etc -->
   	<copy todir="${wardir}"  preservelastmodified="true" >
@@ -64,7 +51,6 @@
 			<include name="assets/**" />
 			<include name="finder/**" />
 			<include name="openinstitute/**" />
-			<!-- <include name="emshare/**" /> -->
 			<include name="theme/**" />
    			<include name="entermedia/_site.xconf" />
     		<include name="*.*" />
