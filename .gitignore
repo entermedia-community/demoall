@@ -8,4 +8,4 @@ webapp/WEB-INF/data/eml/
 webapp/WEB-INF/data/medialab/
 webapp/WEB-INF/data/visualdata/
 webapp/media/catalogs/
-
+logs/
