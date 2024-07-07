@@ -9,3 +9,7 @@ webapp/WEB-INF/data/medialab/
 webapp/WEB-INF/data/visualdata/
 webapp/media/catalogs/
 logs/
+webapp/finder/find/components/javascript/index.js
+webapp/finder/find/views/modules/asset/_site.xconf
+webapp/finder/find/views/settings/modules/asset/_site.xconf
+webapp/null/services/module/asset/_site.xconf
