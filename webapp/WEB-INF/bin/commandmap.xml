@@ -11,8 +11,9 @@
 		<qt-faststart>./qt-faststart</qt-faststart>
 	</commandmap>
 	<commandmap os="LINUX">
+		<dita>/media/services/dita-ot-4.2.3/bin/dita</dita>
 		<avconv>ffmpeg</avconv>
-        <avprobe>ffprobe</avprobe>
+    		<avprobe>ffprobe</avprobe>
 		<commandbase>./WEB-INF/bin/linux</commandbase>
 		<exiftoolthumb>./exiftoolthumb.sh</exiftoolthumb>
 		<mencodermkv>./mencodermkv.sh</mencodermkv>
