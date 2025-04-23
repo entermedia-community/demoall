@@ -13,3 +13,4 @@ webapp/finder/find/components/javascript/index.js
 webapp/finder/find/views/modules/asset/_site.xconf
 webapp/finder/find/views/settings/modules/asset/_site.xconf
 webapp/null/services/module/asset/_site.xconf
+.DS_Store
