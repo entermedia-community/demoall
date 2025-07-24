@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project basedir="." default="default" name="demoall">
-
-  <target name="default" depends="clean, update-dependencies, war"/>
-    <target name="dependency" depends="default"/>
+	
+	<target name="default" depends="clean, update-dependencies, war"/>
+	<target name="dependency" depends="default"/>
     
 	<property name="appname" value="${ant.project.name}"/>
 	<property name="org" value="EnterMedia, Inc."/>
@@ -13,72 +13,67 @@
 	<property name="webapp" location="${basedir}/webapp"/>
 	<property name="webinf" location="${webapp}/WEB-INF"/>
 	<property name="branch" value="em11_" />
-	<property name="majorversion" value="7" />
-	
+	<property name="majorversion" value="11" />
 	<property environment="env" />
-
+	
 	<property name="version"  value="${majorversion}.${env.BUILD_NUMBER}"/>
 	<property name="deployDir" value="deploy"/>
-  	<property name="report" value="${deployDir}"/>
+	<property name="report" value="${deployDir}"/>
 	
 	<!-- A convenience variable for documentation output -->
 	<property name="versionedApp" value="${appname}-${version}"/>
 
-  <target name="clean">
-     <delete dir="${build}"/>
-     <delete dir="${wardir}"/>
-  </target>
+  	<target name="clean">
+    	 <delete dir="${build}"/>
+     	<delete dir="${wardir}"/>
+  	</target>
 
-  <target name="update-dependencies" depends="clean">
-    <mkdir dir="${wardir}/WEB-INF/" />
-	<get dest="${build}/install.xml" src="http://dev.entermediasoftware.com/jenkins/job/em11_entermedia-server/lastSuccessfulBuild/artifact/deploy/install.xml"/>
-	<ant antfile="${build}/install.xml" inheritAll="false" dir="${wardir}/WEB-INF/" target="default"/> 
-
-	<get dest="${build}/install.xml" src="http://dev.entermediasoftware.com/jenkins/job/em11_app-emshare/lastSuccessfulBuild/artifact/deploy/install.xml"/>
-	<ant antfile="${build}/install.xml" inheritAll="false" dir="${wardir}/WEB-INF/" target="default"/> 
-
-  	<get dest="${build}/install.xml" src="http://dev.entermediasoftware.com/jenkins/job/em11_extension-openedit/lastSuccessfulBuild/artifact/deploy/install.xml"/>
-	<ant antfile="${build}/install.xml" inheritAll="false" dir="${wardir}/WEB-INF/" target="default"/> 
-  	
-	<!-- Add tracker, loudmouth moneymaker etc -->
-  	<copy todir="${wardir}"  preservelastmodified="true" >
-		<fileset dir="${webapp}" followsymlinks="false">
-			<include name="WEB-INF/base/**" />			
-			<include name="WEB-INF/bin/**" />
-			<include name="WEB-INF/data/system/**" />
-			<include name="WEB-INF/*.*" />
-			<include name="media/**" />
-			<include name="assets/**" />
-			<include name="finder/**" />
-			<include name="openinstitute/**" />
-			<include name="theme/**" />
-   			<include name="entermedia/_site.xconf" />
-    		<include name="*.*" />
-		</fileset>
-   	</copy>
-
-  </target>
+  	<target name="update-dependencies" depends="clean">
+	    <mkdir dir="${wardir}/WEB-INF/" />
+		<get dest="${build}/install.xml" src="http://dev.entermediasoftware.com/jenkins/job/em11_entermedia-server/lastSuccessfulBuild/artifact/deploy/install.xml"/>
+		<ant antfile="${build}/install.xml" inheritAll="false" dir="${wardir}/WEB-INF/" target="default"/> 
+	
+		<get dest="${build}/install.xml" src="http://dev.entermediasoftware.com/jenkins/job/em11_app-emshare/lastSuccessfulBuild/artifact/deploy/install.xml"/>
+		<ant antfile="${build}/install.xml" inheritAll="false" dir="${wardir}/WEB-INF/" target="default"/> 
+	
+	  	<get dest="${build}/install.xml" src="http://dev.entermediasoftware.com/jenkins/job/em11_extension-openedit/lastSuccessfulBuild/artifact/deploy/install.xml"/>
+		<ant antfile="${build}/install.xml" inheritAll="false" dir="${wardir}/WEB-INF/" target="default"/> 
+	  	
+	  	<copy todir="${wardir}"  preservelastmodified="true" >
+			<fileset dir="${webapp}" followsymlinks="false">
+				<include name="WEB-INF/base/**" />			
+				<include name="WEB-INF/bin/**" />
+				<include name="WEB-INF/data/system/**" />
+				<include name="WEB-INF/*.*" />
+				<include name="media/**" />
+				<include name="finder/**" />
+				<include name="openinstitute/**" />
+				<include name="theme/**" />
+	   			<include name="entermedia/_site.xconf" />
+	    		<include name="*.*" />
+			</fileset>
+	   	</copy>
+  	</target>
     	
   	<!-- 
 		========================================================================
 		Create WAR
 		========================================================================
 	-->	
-  <target name="war" >
-	<mkdir dir="${deployDir}/builds" />
-	<war warfile="${deployDir}/builds/${versionedApp}.war" webxml="${webinf}/web.xml" basedir="${wardir}"
-		excludes="WEB-INF/base/archive/**,WEB-INF/base/store/**,WEB-INF/base/search/**,entermedia/catalogs/**">
-  		<manifest>
-	    	<attribute name="Built-By" value="${user.name}"/>
-		    <attribute name="Implementation-Title" value="${appname}"/>
-		    <attribute name="Implementation-Version" value="${version}"/>
-		    <attribute name="Implementation-Vendor" value="${org}"/>
-	    </manifest>
-	  </war>
+	<target name="war" >
+		<mkdir dir="${deployDir}/builds" />
+		<war warfile="${deployDir}/builds/${versionedApp}.war" webxml="${webinf}/web.xml" basedir="${wardir}"
+			excludes="WEB-INF/base/archive/**,WEB-INF/base/store/**,WEB-INF/base/search/**,entermedia/catalogs/**">
+  			<manifest>
+		    	<attribute name="Built-By" value="${user.name}"/>
+			    <attribute name="Implementation-Title" value="${appname}"/>
+			    <attribute name="Implementation-Version" value="${version}"/>
+			    <attribute name="Implementation-Vendor" value="${org}"/>
+	 	   </manifest>
+		  </war>
 
- 	<move overwrite="true" file="${deployDir}/builds/${versionedApp}.war" 
-        tofile="${deployDir}/ROOT.war"/>
+ 		<move overwrite="true" file="${deployDir}/builds/${versionedApp}.war" tofile="${deployDir}/ROOT.war"/>
   	
-  </target>
+	</target>
 
 </project>
