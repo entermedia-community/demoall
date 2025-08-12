@@ -9,11 +9,12 @@
 		<composite>/usr/local/Cellar/imagemagick/6.7.1-1/bin/composite</composite>
 		<ffmpeg>/usr/local/Cellar/ffmpeg/0.9/bin/ffmpeg</ffmpeg>
 		<qt-faststart>./qt-faststart</qt-faststart>
+		<ghostscript>/opt/homebrew/bin/gs</ghostscript>
 	</commandmap>
 	<commandmap os="LINUX">
 		<dita>/media/services/dita-ot-4.2.3/bin/dita</dita>
 		<avconv>ffmpeg</avconv>
-    		<avprobe>ffprobe</avprobe>
+		<avprobe>ffprobe</avprobe>
 		<commandbase>./WEB-INF/bin/linux</commandbase>
 		<exiftoolthumb>./exiftoolthumb.sh</exiftoolthumb>
 		<mencodermkv>./mencodermkv.sh</mencodermkv>
@@ -22,25 +23,25 @@
 		<setupresiliodrive>./setupresiliodrive.sh</setupresiliodrive>
 		<setupinsyncdrive>./setupinsyncdrive.sh</setupinsyncdrive>
 		<restartdocker>./restartdocker.sh</restartdocker>
-		
+
 		<!-- Trial Sites -->
 		<trialsetup>/usr/share/entermediadb/bin/setupclient.sh</trialsetup>
 		<trialdisable>/usr/share/entermediadb/bin/trialsites-disableinstance.sh</trialdisable>
 		<trialremove>/usr/share/entermediadb/bin/trialsites-deleteinstance.sh</trialremove>
 	</commandmap>
-    <commandmap os="WINDOWS">
-        <commandbase>..\tools</commandbase>
-        <lame>.\lame\lame.exe</lame>
-        <ffmpeg>.\ffmpeg\ffmpeg.exe</ffmpeg>
-        <ffprobe>.\ffmpeg\ffprobe.exe</ffprobe>
-        <convert>.\im\convert.exe</convert>
-        <composite>.\im\composite.exe</composite>
-        <ghostscript>.\gs\bin\gswin64c.exe</ghostscript>
-        <exiftool>.\exiftool\exiftool.exe</exiftool>
-        <exiftoolthumb>.\exiftool\exiftoolthumb.bat</exiftoolthumb>
-        <qt-faststart>.\ffmpeg\qt-faststart.exe</qt-faststart>
-        <unlock>.\unlocker\unlocker.exe</unlock>
-        <avconv>.\avconv\bin\avconv.exe</avconv>
-    </commandmap>
+	<commandmap os="WINDOWS">
+		<commandbase>..\tools</commandbase>
+		<lame>.\lame\lame.exe</lame>
+		<ffmpeg>.\ffmpeg\ffmpeg.exe</ffmpeg>
+		<ffprobe>.\ffmpeg\ffprobe.exe</ffprobe>
+		<convert>.\im\convert.exe</convert>
+		<composite>.\im\composite.exe</composite>
+		<ghostscript>.\gs\bin\gswin64c.exe</ghostscript>
+		<exiftool>.\exiftool\exiftool.exe</exiftool>
+		<exiftoolthumb>.\exiftool\exiftoolthumb.bat</exiftoolthumb>
+		<qt-faststart>.\ffmpeg\qt-faststart.exe</qt-faststart>
+		<unlock>.\unlocker\unlocker.exe</unlock>
+		<avconv>.\avconv\bin\avconv.exe</avconv>
+	</commandmap>
 
 </commandmaps>
