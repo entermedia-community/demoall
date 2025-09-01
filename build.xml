@@ -12,9 +12,10 @@
 	<property name="wardir" location="${build}/wartmp"/>
 	<property name="webapp" location="${basedir}/webapp"/>
 	<property name="webinf" location="${webapp}/WEB-INF"/>
-	<property name="branch" value="em11_" />
+	<property name="branch" value="main" />
 	<property name="majorversion" value="11" />
 	<property environment="env" />
+	<property name="remotehome" value="http://dev.entermediasoftware.com/jenkins/job" />
 	
 	<property name="version"  value="${majorversion}.${env.BUILD_NUMBER}"/>
 	<property name="deployDir" value="deploy"/>
@@ -30,13 +31,13 @@
 
   	<target name="update-dependencies">
 	    <mkdir dir="${wardir}/WEB-INF/" />
-		<get dest="${build}/install.xml" src="http://dev.entermediasoftware.com/jenkins/job/main_entermedia-server/lastSuccessfulBuild/artifact/deploy/install.xml"/>
+		<get dest="${build}/install.xml" src="${remotehome}/${branch}_entermedia-server/lastSuccessfulBuild/artifact/deploy/install.xml"/>
 		<ant antfile="${build}/install.xml" inheritAll="false" dir="${wardir}/WEB-INF/" target="default"/> 
 	
-		<get dest="${build}/install.xml" src="http://dev.entermediasoftware.com/jenkins/job/main_app-emshare/lastSuccessfulBuild/artifact/deploy/install.xml"/>
+		<get dest="${build}/install.xml" src="${remotehome}/${branch}_app-emshare/lastSuccessfulBuild/artifact/deploy/install.xml"/>
 		<ant antfile="${build}/install.xml" inheritAll="false" dir="${wardir}/WEB-INF/" target="default"/> 
 	
-	  	<get dest="${build}/install.xml" src="http://dev.entermediasoftware.com/jenkins/job/main_extension-openedit/lastSuccessfulBuild/artifact/deploy/install.xml"/>
+	  	<get dest="${build}/install.xml" src="${remotehome}/${branch}_extension-openedit/lastSuccessfulBuild/artifact/deploy/install.xml"/>
 		<ant antfile="${build}/install.xml" inheritAll="false" dir="${wardir}/WEB-INF/" target="default"/> 
 	  	
 	  	<copy todir="${wardir}"  preservelastmodified="true" >
