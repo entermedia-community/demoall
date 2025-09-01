@@ -28,15 +28,15 @@
      	<delete dir="${wardir}"/>
   	</target>
 
-  	<target name="update-dependencies" depends="clean">
+  	<target name="update-dependencies">
 	    <mkdir dir="${wardir}/WEB-INF/" />
-		<get dest="${build}/install.xml" src="http://dev.entermediasoftware.com/jenkins/job/em11_entermedia-server/lastSuccessfulBuild/artifact/deploy/install.xml"/>
+		<get dest="${build}/install.xml" src="http://dev.entermediasoftware.com/jenkins/job/main_entermedia-server/lastSuccessfulBuild/artifact/deploy/install.xml"/>
 		<ant antfile="${build}/install.xml" inheritAll="false" dir="${wardir}/WEB-INF/" target="default"/> 
 	
-		<get dest="${build}/install.xml" src="http://dev.entermediasoftware.com/jenkins/job/em11_app-emshare/lastSuccessfulBuild/artifact/deploy/install.xml"/>
+		<get dest="${build}/install.xml" src="http://dev.entermediasoftware.com/jenkins/job/main_app-emshare/lastSuccessfulBuild/artifact/deploy/install.xml"/>
 		<ant antfile="${build}/install.xml" inheritAll="false" dir="${wardir}/WEB-INF/" target="default"/> 
 	
-	  	<get dest="${build}/install.xml" src="http://dev.entermediasoftware.com/jenkins/job/em11_extension-openedit/lastSuccessfulBuild/artifact/deploy/install.xml"/>
+	  	<get dest="${build}/install.xml" src="http://dev.entermediasoftware.com/jenkins/job/main_extension-openedit/lastSuccessfulBuild/artifact/deploy/install.xml"/>
 		<ant antfile="${build}/install.xml" inheritAll="false" dir="${wardir}/WEB-INF/" target="default"/> 
 	  	
 	  	<copy todir="${wardir}"  preservelastmodified="true" >
