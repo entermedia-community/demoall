@@ -15,7 +15,7 @@
 	<property name="branch" value="main" />
 	<property name="majorversion" value="11" />
 	<property environment="env" />
-	<property name="remotehome" value="http://dev.entermediasoftware.com/jenkins/job" />
+	<property name="remotehome" value="https://dev.entermediadb.org/jenkins/job" />
 	
 	<property name="version"  value="${majorversion}.${env.BUILD_NUMBER}"/>
 	<property name="deployDir" value="deploy"/>
